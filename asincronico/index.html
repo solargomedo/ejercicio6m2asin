@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <script>
+/*
+En este ejercicio, deberás crear un Arreglo llamado películas, que tenga -por cada
+película- un Objeto con las siguientes Propiedades:
+● titulo
+● rating
+● loHasVisto
+Usá un for loop para iterar sobre el Arreglo e imprimir un resultado en la consola
+que se vea como esto:
+
+*/
+
+/*const peliculas=[
+    {
+        titulo:"Hombre araña",
+        rating:5,
+        laHasVisto:true
+        
+    },
+    {
+        titulo:"La Cenicienta",
+        rating:3,
+        laHasVisto:true
+        
+    },
+    {
+        titulo:"Alicia en el Pais de las Maravillas",
+        rating:4,
+        laHasVisto:false
+        
+    }
+]
+//unamos of
+for (let pelicula of peliculas){
+    if(pelicula.laHasVisto==true){
+        console.log('Viste "' + pelicula.titulo + '" - ' + pelicula.rating + ' estrellas' );
+    } else{
+        console.log('No viste "' + pelicula.titulo + '" - ' + pelicula.rating + ' estrellas' );
+    }
+}*/
+
+/*
+
+palabra como parámetro y devuelva un arreglo de objetos que tenga: una
+propiedad llamada como la palabra pasada por parámetro y el valor del número y
+sus anteriores.
+1
+Ejemplo:
+arregloDeObjetos(5, “hola”) debe retornar [{hola: 1}, {hola: 2},
+{hola: 3}, {hola: 4}, {hola: 5 }]
+arregloDeObjetos(3, “chau”) debe retornar [{chau: 1}, {chau: 2},
+{chau: 3}]
+*/
+/*function arregloObjetos(numero, palabra){  
+      let arrayObjeto=[];
+     
+      for(i=1;i <= numero; i++){
+        const objeto = {}
+        objeto[palabra] = i
+        arrayObjeto.push(objeto);
+      }
+     return arrayObjeto
+    }*/
+     
+
+
+    function arregloDeObjetos(numero, palabra){
+    let array = [];
+    for(let i = 1; i <= numero; i++){
+        const objeto = {}
+        objeto[palabra] = i
+        array.push(objeto);
+      }
+     return array
+    }
+           
+            
+    
+
+
+   </script> 
+</body>
+</html>
